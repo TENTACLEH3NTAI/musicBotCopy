@@ -1,6 +1,8 @@
 const { Client, Util } = require('discord.js');
 const { TOKEN, PREFIX, GOOGLE_API_KEY } = require('./config');
 const YouTube = require('simple-youtube-api');
+const ffmpeg = require('ffmpeg')
+const ffmpegbinaries = require('ffmpeg-binaries')
 const ytdl = require('ytdl-core');
 
 const client = new Client({ disableEveryone: true });
